@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charse="utf-8">
     <title>imooc jade study</title>
+    <title>JADE</title>
   </head>
   <body>
-    <h1 class="title">immoc jada study</h1>
+    <h2>转义</h2>
+    <p>text</p>
+    <p>&lt;script&gt;alert(1);&lt;/script&gt;&lt;span&gt;script&lt;/span&gt;</p>
+    <h2>非转义</h2>
+    <p><script>alert(1);</script><span>script</span></p>
+    <p>&lt;script&gt;alert(1);&lt;/script&gt;&lt;span&gt;script&lt;/span&gt;</p>
+    <p><script>alert(1);</script><span>script</span></p>
+    <!-- h1#testid.color.title immoc jada study-->
+    <div id="testid" class="test class1"></div>
     <p></p><strong></strong>
     <hr><br>
+    <style>
+      body {color:#ffffff;}
+      
+    </style>
+    <script>var immocCourse = 'Jade';</script><a href="xxxx" title="xxx" data-uid="xxx"></a>
+    <input name="course" value="English">
+    <input name="course" value="Chinese" checked>
+    <h3>注释</h3>
+    <!-- p#id test it-->
+    <h3>非缓冲注释</h3>
+    <h3>块注释 + 缩进... </h3>
   </body>
 </html>
+<p>
+  1. aa
+  2. bb
+  3. cc
+  4. dd    
+  
+  
+</p>
+<!-- Jade 挺有意思....-->
+<!-- 传入模板中参数-->
+<!-- jade index.jade -P -w --obj '{"course":"Jade"}'-->
+<!-- 通过json 文件传入-->
+<!-- jade index.jade -P -w -O course.json-->

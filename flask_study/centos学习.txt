@@ -1,0 +1,65 @@
+
+
+centos
+======
+
+官网：
+---
+http://www.centos.org/
+
+
+有3个版本， dvd, everything, mininal,
+
+
+iso 下载路径： 7G
+http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Everything-1503-01.iso
+
+ios minimal: 1G
+http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1503-01.iso
+
+
+
+Centos和Ubuntu有什么区别?
+http://www.centoscn.com/CentosBug/osbug/2013/0729/744.html
+
+
+     CentOS（Community ENTerprise Operating System）是Linux发行版之一，它是来自于Red Hat Enterprise Linux依照开放源代码规定释出的源代码所编译而成。由于出自同样的源代码，因此有些要求高度稳定性的服务器以CentOS替代商业版的Red Hat Enterprise Linux使用。
+
+     Ubuntu是一个以桌面应用为主的Linux操作系统。Ubuntu基于Debian发行版和GNOME桌面环境，与Debian的不同在于它每6个月会发布一个新版本。Ubuntu的目标在于为一般用户提供一个最新的、同时又相当稳定的主要由自由软件构建而成的操作系统。Ubuntu具有庞大的社区力量，用户可以方便地从社区获得帮助。
+
+      两者同为目前版本中个人和小团队常用的服务级操作系统，在线提供的软件库中可以很方便的安装到很多开源的软件及库。  两者都使用
+
+bash作为基础shell，所以在很多基础命令上，ubuntu与centos的差别不是很明显，而ubuntu在桌面界面上要做的更为出色，很多人如果是
+
+从兴趣出发而学习linux的首选一般都是ubuntu，毕竟很多人还是很习惯在桌面图形下操作的。
+
+Centos与Ubuntu的使用习惯和命令上还是有很多的不同，下面简单列举一下：
+
+1.centos中新建的非root用户是没有sudo的权限的，如果需要使用sudo权限必须在/etc/sudoers 中加入账户和权限，所以切换到root账号的时候只需要输入：su,加入root账号的密码即可。
+
+在Ubuntu中，一般使用sudo+命令，如果是第一次使用会提示输入当前用户的密码（而不是root的密码）
+
+2.在线安装软件中，centos使用的是yum命令，而ubuntu中使用的是apt-get命令。除此之外yum中还有一个从软件源中搜索摸个软件的方法
+
+yum search +软件名
+
+         3.centos是来自于redhat，所以centos支持rpm格式的安装，而ubuntu显然是不支持的。
+
+         4.毕竟是不同的公司做的不同的发行版，很多配置文件的位置和默认的文件路径都有很大区别，这个需要使用过程中慢慢体会了。
+
+
+
+常见问题及解决方案
+=========
+
+centos7没有安装ifconfig命令的解决方法
+http://www.centoscn.com/CentosBug/osbug/2014/0916/3750.html
+简介：
+ifconfig命令是设置或显示网络接口的程序，可以显示出我们机器的网卡信息，可是有些时候最小化安装CentOS等Linux发行版的时候会默认不安装ifconfig等命令，这时候你进入终端，运行ifconfig命令就会出错
+
+
+
+
+
+
+

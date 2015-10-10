@@ -1,0 +1,43 @@
+
+
+Flask 学习：
+=====
+
+欢迎来到 Flask 的世界
+http://dormousehole.readthedocs.org/en/latest/
+
+
+Tornado与flask的特点和区别有哪些？
+http://www.zhihu.com/question/21295501
+#NOTE:
+简介
+
+相对来说，flask比较简单，flask用的几个核心库都是相同的作者开发的，有保证，如果想入门，从flask入门比较不错。而且，flask的资料也非常多，Github有很多使用flask的开源项目。
+
+我简单的对比了一下Tornado和Flask，其中Tornado我用的不多，只是看过文档：
+Tornado大了一点说其实应该算是一个异步框架和Web框架，Web框架是其中的一部分功能；flask则更加简单一些，就是一个Web框架。
+
+
+我觉得你用flask就可以，因为这3个框架里，falsk无疑是最简单的。
+Django过于复杂和封闭，他的orm我估计你也用不上。
+tornado的并发处理比flask强，但是你对并发没要求。
+就简单灵活易用来说，用flask是比较合适的。
+另外一点flask的文档和扩展都比tornado要好。
+
+
+做博客，我倒是支持用django，因为博客只要写好一个model之后，剩下的就是html这些前段模板的工作了。
+flask是没有原生的数据层面的东西，很多人都是将它配合SQLAlchemy来使用，django自带orm。
+不过这个问题是针对题主你个人情况啦，如果你对SQL很熟悉，或者已经掌握了一些如SQLAlchemy之类的orm框架，flask用起来也不难。
+flask框架是建立于你已经对python各种web框架，以及Python这一门语言已经有较深理解情况下使用的。你以为flask真的就只是flask一个部分吗？jinja2你要不要学？Werkzeug要不要学？这些都是flask的依赖库啊。
+反正flask跟django都有一个建立网络博客的教程，你倒可以学习学习，然后再看适合用哪个。至于Tornado不是用来搞什么TCP server的吗，只是写个博客而已，用这些异步框架不太合适吧。
+
+#TODO: 
+这里提到了jingjia， Werkzeug 
+
+
+
+Python六大开源框架对比：Web2py略胜一筹
+http://www.csdn.net/article/2013-08-08/2816494-6-pillars-of-python-assessment-of-best-python-web-frameworks
+#NOTE：
+竟然没有写tornado, flask。。。 
+

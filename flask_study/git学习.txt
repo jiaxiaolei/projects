@@ -1,0 +1,14 @@
+
+
+git 学习：
+
+
+一个成功的Git分支模型
+http://www.juvenxu.com/2010/11/28/a-successful-git-branching-model/
+简介：
+这里主要以 develop 和 master 为主要分支来进行
+
+
+分布式控制系统git, 集中式控制系统 svn, 分支和合并都非常小心。
+
+
