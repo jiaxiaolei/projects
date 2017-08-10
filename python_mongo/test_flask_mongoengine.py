@@ -16,7 +16,8 @@ app = Flask(__name__)
 #        'port': 28010 
 #        }
 
-"""
+""" 
+# NOTE: connect_settings invalid.
 app.config['MONGODB_SETTINGS'] = [
         {
         'db': 'mpc',
@@ -36,7 +37,7 @@ app.config['MONGODB_SETTINGS'] = [
 """
 
 app.config['MONGODB_SETTINGS'] = {
-        'host': 'mongodb://mpc:mpc@mongo-1:28010,mongo-2:28010/mpc',
+        'host': 'mongodb://mpc:mpc@mongo-1:28010,mongo-2:28010,mongo-3:2801/mpc',
         }
 
 
@@ -49,10 +50,3 @@ class User(db.Document):
 
 print 'filter', User.objects.filter()
 
-
-
-print 'db',db
-print 'dir db', dir(db)
-print 'dir db', db.Document 
-print ' db query', db.query
-#print ' db', db.objects
