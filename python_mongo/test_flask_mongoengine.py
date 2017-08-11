@@ -37,7 +37,7 @@ app.config['MONGODB_SETTINGS'] = [
 """
 
 app.config['MONGODB_SETTINGS'] = {
-        'host': 'mongodb://mpc:mpc@mongo-1:28010,mongo-2:28010,mongo-3:2801/mpc',
+        'host': 'mongodb://mpc:mpc#mongo-1:28010,mongo-2:28010,mongo-3:2801/mpc',
         }
 
 
