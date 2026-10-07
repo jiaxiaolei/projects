@@ -1,6 +1,7 @@
 # -*-coding:utf8 -*-
 
-from gevent import monkey; monkey.patch_socket()
+from gevent import monkey; 
+monkey.patch_socket()
 import gevent
 
 def f(n):
@@ -14,3 +15,4 @@ g3 = gevent.spawn(f, 5)
 g1.join()
 g2.join()
 g3.join()
+
